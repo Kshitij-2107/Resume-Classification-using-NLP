@@ -35,9 +35,9 @@ from spacy.matcher import Matcher
 matcher = Matcher(nlp.vocab)
 
 
-mfile = BytesIO(requests.get('https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/c364208e6b2408e284f3943a2e528ed59a99e8db/Resume_nlp.sav').content)
+mfile = BytesIO(requests.get('https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/c364208e6b2408e284f3943a2e528ed59a99e8db/Resume_nlp.sav?raw=true').content)
 model = load(mfile)
-mfile1 = BytesIO(requests.get('https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/c364208e6b2408e284f3943a2e528ed59a99e8db/vector.pkl').content)
+mfile1 = BytesIO(requests.get('https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/c364208e6b2408e284f3943a2e528ed59a99e8db/vector.pkl?raw=true').content)
 model1 = load(mfile1)
 
 
