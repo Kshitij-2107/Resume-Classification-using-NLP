@@ -50,7 +50,7 @@ def extract_skills(resume_text):
     tokens = [token.text for token in nlp_text if not token.is_stop]
             
     # reading the csv file
-    data = pd.read_csv("https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/1ac35b401fa1d2d0c031ef4e334e75741d8df136/skills.csv", sep=";|,",engine ='python',chunksize=5000000,
+    data = pd.read_csv("https://github.com/Kshitij-2107/Resume-Classification-using-NLP/blob/1ac35b401fa1d2d0c031ef4e334e75741d8df136/skills.csv", sep=";|,",engine ='python',
 error_bad_lines=False) 
             
     # extract values
